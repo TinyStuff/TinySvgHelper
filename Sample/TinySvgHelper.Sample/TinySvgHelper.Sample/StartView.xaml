@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:svg="clr-namespace:TinySvgHelper;assembly=TinySvgHelper"
+             mc:Ignorable="d"
+             x:Class="TinySvgHelper.Sample.StartView">
+    <ContentPage.Content>
+        <Grid>
+            <!--<Image Source="{svg:Svg FileName='logo.svg', Height=200,Width=200}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.31">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
+    <Title>TinySvgHelper</Title>
+    <PackageId>TinySvgHelper</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Description>TinySvgHelper is a library that helps you using SVG icons in a Xamarin.Forms app.</Description>
+    <Authors>Daniel Hindrikes</Authors>
+    <Company>TinyStuff</Company>
+    <RepositoryUrl>https://github.com/TinyStuff/TinySvgHelper</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/TinyStuff/TinySvgHelper</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/34911293</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="**\*.android.cs" />
+    <Compile Remove="**\*.ios.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+    <Compile Remove="**\*.ios.cs" />
+    <Compile Include="**\*.android.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+    <Compile Remove="**\*.android.cs" />
+    <Compile Include="**\*.ios.cs" />
+  </ItemGroup>
+</Project>
