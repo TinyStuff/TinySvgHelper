@@ -23,9 +23,7 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: NuGet restore
-      run: dotnet restore $GITHUB_WORKSPACE/TinySvgHelper/TinySvgHelper.csproj
-      
-    - name: NuGet restore
-      run: dotnet build $GITHUB_WORKSPACE/TinySvgHelper/TinySvgHelper.csproj
+    - name: build
+      run: msbuild -t:build -restore $GITHUB_WORKSPACE
+
 
