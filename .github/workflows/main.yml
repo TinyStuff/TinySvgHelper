@@ -28,6 +28,9 @@ jobs:
     - name: restore
       run: nuget restore TinySvgHelper.sln -Verbosity detailed
       
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
+    
     - name: build
       run: msbuild TinySvgHelper\TinySvgHelper.csproj /p:Configuration=Release
 
