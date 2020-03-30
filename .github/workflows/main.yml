@@ -25,6 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: build
       run: | 
+       cd $GITHUB_WORKSPACE/TinySvghelper
        nuget restore 
        msbuild $GITHUB_WORKSPACE/TinySvghelper/TinySvgHelper.csproj
 
