@@ -26,9 +26,9 @@ jobs:
       run: dir
       
     - name: restore
-      run: nuget restore
+      run: nuget restore TinySvgHelper.sln
       
     - name: build
-      run: msbuild TinySvgHelper/TinySvgHelper.csproj
+      run: msbuild TinySvgHelper\TinySvgHelper.csproj /p:Configuration=Release
 
 
