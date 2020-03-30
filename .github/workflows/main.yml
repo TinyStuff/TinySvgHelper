@@ -24,6 +24,6 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: build
-      run: msbuild -t:build -restore $GITHUB_WORKSPACE
+      run: msbuild -t:build -restore $GITHUB_WORKSPACE/TinySvghelper/TinySvgHelper.csproj
 
 
