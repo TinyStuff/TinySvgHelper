@@ -8,7 +8,7 @@
              x:Class="TinySvgHelper.Sample.StartView">
     <ContentPage.Content>
         <Grid>
-            <!--<Image Source="{svg:Svg FileName='logo.svg', Height=200,Width=200}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+            <Image Source="{svg:Svg FileName='logo.svg', Height=200,Width=200}" VerticalOptions="Center" HorizontalOptions="Center" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

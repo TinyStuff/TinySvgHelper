@@ -16,11 +16,6 @@ namespace TinySvgHelper.Sample
         {
             InitializeComponent();
 
-            ToolbarItems.Add(new ToolbarItem()
-            {
-                Text = "Info",
-                IconImageSource = SvgHelper.GetAsImageSource("info.svg", 22, 22, Color.Default)
-            }); ;
         }
     }
 }

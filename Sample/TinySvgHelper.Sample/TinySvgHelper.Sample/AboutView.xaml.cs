@@ -15,6 +15,8 @@ namespace TinySvgHelper.Sample
         public AboutView()
         {
             InitializeComponent();
+
+            Icon.Source = TinySvgHelper.SvgHelper.GetAsImageSource("info.svg", 50, 50, Color.Blue);
         }
     }
 }

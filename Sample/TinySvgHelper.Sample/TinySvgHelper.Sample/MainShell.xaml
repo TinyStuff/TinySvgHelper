@@ -8,9 +8,9 @@
              mc:Ignorable="d"
              x:Class="TinySvgHelper.Sample.MainShell">
     <TabBar>
-        <local:StartView Title="Start" IconImageSource="{svg:Svg FileName='info.svg', Height=44,Width=44,Color=Black}" />
+        <ShellContent Icon="{svg:Svg FileName='info.svg', Height=22,Width=22,Color=Black}" Title="Start">
+            <local:StartView Title="Start" IconImageSource="" />
+        </ShellContent>
         <local:AboutView Title="About" IconImageSource="send.png" />
-
-
     </TabBar>
 </Shell>
