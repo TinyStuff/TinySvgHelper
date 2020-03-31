@@ -1,7 +1,4 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+name: '3.4'
 
 trigger:
 - master
@@ -24,6 +21,7 @@ steps:
    inputs:
       solution: '**/TinySvgHelper.csproj'
       configuration: 'Release'
+      msbuildArguments: '/t:pack /p:PackageVersion=$(Build.BuildNumber).$(Build.BuildId))'
       
  - task: CopyFiles@2
    inputs:
