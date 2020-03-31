@@ -5,7 +5,7 @@ using SkiaSharp.Extended.Svg;
 
 namespace TinySvgHelper
 {
-    public class PlatformHelper : IPlatformHelper
+    internal class PlatformHelper : IPlatformHelper
     {
 
         public SKSvg Load(string svgImage)

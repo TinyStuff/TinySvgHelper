@@ -120,8 +120,8 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -130,7 +130,7 @@
       <Name>TinySvgHelper</Name>
     </ProjectReference>
     <ProjectReference Include="..\TinySvgHelper.Sample\TinySvgHelper.Sample.csproj">
-      <Project>{0C3537D6-3045-4ECE-BA61-4F08A718EAD3}</Project>
+      <Project>{8F1B0CD5-6E2D-4059-A5F2-DAA11516A655}</Project>
       <Name>TinySvgHelper.Sample</Name>
     </ProjectReference>
   </ItemGroup>

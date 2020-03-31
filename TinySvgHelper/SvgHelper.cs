@@ -8,7 +8,7 @@ namespace TinySvgHelper
 {
     public class SvgHelper
     {
-        public static IPlatformHelper PlatformHelper {get;set;}
+        internal static IPlatformHelper PlatformHelper {get;set;}
 
         public static void Init()
         {
